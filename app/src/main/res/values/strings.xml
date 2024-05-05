@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RUOK_Homeless</string>
+<<<<<<< HEAD
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> 0551cda4b92c296afbeb874023f263e8390935ad
 </resources>
