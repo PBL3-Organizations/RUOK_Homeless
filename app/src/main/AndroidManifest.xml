@@ -13,7 +13,6 @@
         android:theme="@style/Theme.RUOK_Homeless"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -23,8 +22,6 @@
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
-=======
->>>>>>> 689acaed459d471b1324099db991190bf43ee34a
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
