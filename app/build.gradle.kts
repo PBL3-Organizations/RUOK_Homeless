@@ -20,10 +20,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-<<<<<<< HEAD
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-=======
->>>>>>> 689acaed459d471b1324099db991190bf43ee34a
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
