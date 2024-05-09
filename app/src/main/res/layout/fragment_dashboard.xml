@@ -29,7 +29,7 @@
             app:layout_constraintVertical_bias="0.5">
 
             <Button
-                android:id="@+id/buttonDanger"
+                android:id="@+id/btnDanger"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
@@ -44,7 +44,7 @@
                 app:strokeWidth="2dp" />
 
             <Button
-                android:id="@+id/buttonMap"
+                android:id="@+id/btnMap"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
@@ -60,7 +60,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/buttonCheckUp"
+            android:id="@+id/btnCheckUp"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginLeft="10dp"
@@ -93,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonCheckUp"
+            app:layout_constraintTop_toBottomOf="@id/btnCheckUp"
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints">
 
@@ -110,10 +110,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonCheckUp">
+                app:layout_constraintTop_toBottomOf="@+id/btnCheckUp">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
