@@ -8,27 +8,27 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/organizations"
+        android:id="@+id/diseases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:text="소속"
+        android:text="질환"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
 
     <EditText
-        android:id="@+id/input_organizations"
+        android:id="@+id/input_diseases"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginTop="-10dp"
         android:layout_marginEnd="16dp"
-        android:hint="소속을 입력하세요"
+        android:hint="질환을 입력하세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.169"
-        app:layout_constraintStart_toEndOf="@+id/organizations"
-        app:layout_constraintTop_toTopOf="@+id/organizations" />
+        app:layout_constraintStart_toEndOf="@+id/diseases"
+        app:layout_constraintTop_toTopOf="@+id/diseases" />
 
     <EditText
         android:id="@+id/input_id"
@@ -195,7 +195,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_organizations"
+        app:layout_constraintTop_toBottomOf="@+id/input_diseases"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -213,16 +213,16 @@
         app:layout_constraintTop_toBottomOf="@+id/worker_profileImage" />
 
     <Button
-        android:id="@+id/find_organizations"
+        android:id="@+id/find_diseases"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F27406"
-        android:text="소속 찾기"
+        android:text="질환 검색"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/input_organizations"
+        app:layout_constraintStart_toEndOf="@+id/input_diseases"
         app:layout_constraintTop_toBottomOf="@+id/input_phoneNumber" />
 
     <TextView
