@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="289dp"
@@ -25,6 +24,7 @@
         android:backgroundTint="#F27406"
         android:text="로그인"
         android:textSize="24sp"
+
         android:textStyle="bold"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/signup_button"
@@ -40,6 +40,7 @@
         android:backgroundTint="#555555"
         android:text="회원가입"
         android:textSize="24sp"
+
         android:textStyle="bold"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
