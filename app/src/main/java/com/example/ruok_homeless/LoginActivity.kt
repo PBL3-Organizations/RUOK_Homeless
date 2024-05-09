@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        val loginButton = findViewById<Button>(R.id.button)
+        val loginButton = findViewById<Button>(R.id.loginbutton2)
         loginButton.setOnClickListener {
             // 로그인 버튼을 클릭하면 DashboardActivity로 이동
             val intent = Intent(this, DashboardActivity::class.java)
