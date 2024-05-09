@@ -116,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="아이디"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,14 +124,16 @@
 
     <ImageView
         android:id="@+id/worker_profileImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/input_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/input_workerName"
+        app:layout_constraintTop_toBottomOf="@+id/textview_signup"
         tools:ignore="MissingConstraints"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -182,7 +184,7 @@
         app:layout_constraintTop_toTopOf="@+id/worker_birth" />
 
     <Button
-        android:id="@+id/signUp_button"
+        android:id="@+id/signUp_button2"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -203,12 +205,13 @@
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F27406"
         android:text="중복 확인"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/input_id"
         app:layout_constraintTop_toBottomOf="@+id/worker_profileImage" />
 
@@ -229,6 +232,7 @@
         android:id="@+id/textview_signup"
         android:layout_width="413dp"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="46dp"
         android:background="#EE7104"
         android:text="  회원가입"
