@@ -29,11 +29,4 @@
         android:paddingStart="20dp"
         app:menu="@menu/menu"/>
 
-    <fragment
-        android:id="@+id/fragment_dashboard"
-        android:name="com.example.ruok_homeless.DashboardFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
 </androidx.drawerlayout.widget.DrawerLayout>

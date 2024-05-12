@@ -12,7 +12,6 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var binding: ActivityDashboardBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
