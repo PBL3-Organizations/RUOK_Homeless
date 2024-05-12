@@ -9,18 +9,22 @@ import androidx.fragment.app.Fragment
 import com.example.ruok_homeless.databinding.ActivityDashboardBinding
 
 class DashboardActivity : AppCompatActivity() {
+    private lateinit var toggle: ActionBarDrawerToggle
+    private lateinit var binding: ActivityDashboardBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_dashboard)
 
         //네비게이션 드로어 바인딩
-        var binding = ActivityDashboardBinding.inflate(layoutInflater)
+        binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        var toggle = ActionBarDrawerToggle(this, binding.drawerLayout, R.string.app_name, R.string.app_name)
+        toggle = ActionBarDrawerToggle(this, binding.drawerLayout, R.string.app_name, R.string.app_name)
         toggle.syncState()
+
+        setFragment(DashboardFragment())
 
         //네비게이션 드로어 선택 시 해당 Fragment로 전환
         binding.navView.setNavigationItemSelectedListener { item ->
