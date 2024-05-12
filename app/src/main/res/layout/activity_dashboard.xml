@@ -5,9 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".DashboardActivity"
-    tools:openDrawer="start">
+    tools:context=".DashboardActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,19 +19,13 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="310dp"
-        android:layout_height="match_parent"
-        android:background="#F27406"
-        android:layout_gravity="start"
-        android:paddingStart="20dp"
-        app:menu="@menu/menu"/>
-
-    <fragment
-        android:id="@+id/fragment_dashboard"
-        android:name="com.example.ruok_homeless.DashboardFragment"
+        android:id="@+id/navigationView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        app:menu="@menu/menu" />
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
