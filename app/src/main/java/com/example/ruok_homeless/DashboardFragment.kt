@@ -21,24 +21,22 @@ class DashboardFragment : Fragment() {
         val btnMap = view?.findViewById<Button>(R.id.btnMap)
         val btnCheckUp = view?.findViewById<Button>(R.id.btnCheckUp)
 
+        //btnCheckUp 클릭시 DashboardFragment에서 QuestionnaireFragment로 이동
         binding.btnCheckUp.setOnClickListener{
-            navigateToFragment(QuestionnaireFragment())
+            val parentActivity = activity as DashboardActivity
+            parentActivity.setFragment(QuestionnaireFragment())
         }
 
+        //btnMap 클릭시 DashboardFragment에서 WalfareFacilitiesFragment로 이동
         binding.btnMap.setOnClickListener{
-            navigateToFragment(WelfareFacilitiesFragment())
+            val parentActivity = activity as DashboardActivity
+            parentActivity.setFragment(WelfareFacilitiesFragment())
         }
 
         return binding!!.root
     }
 
-    fun navigateToFragment(fragment: Fragment) {
-        val fragmentManager = requireActivity().supportFragmentManager
-        val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_dashboard, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
