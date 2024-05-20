@@ -18,36 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_id"
+        android:id="@+id/phone_number"
         android:layout_width="289dp"
         android:layout_height="62dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="80dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/border"
-        android:hint="  아이디"
+        android:hint=" 전화번호"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/input_password"
-        android:layout_width="289dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="60dp"
-        android:hint="  비밀번호"
-        android:inputType="textPassword"
-        android:background="@drawable/border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_id" />
 
     <Button
         android:id="@+id/loginbutton2"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="#EE7104"
@@ -56,7 +45,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
