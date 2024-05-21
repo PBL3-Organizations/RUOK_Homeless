@@ -19,12 +19,12 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
         val btnMap = view?.findViewById<Button>(R.id.btnMap)
-        val btnCheckUp = view?.findViewById<Button>(R.id.btnCheckUp)
+        val btnRequest = view?.findViewById<Button>(R.id.btnRequest)
 
-        //btnCheckUp 클릭시 DashboardFragment에서 QuestionnaireFragment로 이동
-        binding.btnCheckUp.setOnClickListener{
+        //btnRequest 클릭시 DashboardFragment에서 RequestFragment로 이동
+        binding.btnRequest.setOnClickListener{
             val parentActivity = activity as DashboardActivity
-            parentActivity.setFragment(QuestionnaireFragment())
+            parentActivity.setFragment(RequestFragment())
         }
 
         //btnMap 클릭시 DashboardFragment에서 WalfareFacilitiesFragment로 이동

@@ -12,125 +12,45 @@
         android:id="@+id/constraintLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="0dp">
+        android:padding="10dp">
 
         <Button
-            android:id="@+id/btnCheckUp"
+            android:id="@+id/btnRequest"
             android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
             android:backgroundTint="#FFFFFF"
-            android:text="문진표 작성하기"
-            android:textColor="#414141"
+            android:text="요청사항"
+            android:textColor="#4E4E4E"
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintBottom_toTopOf="@+id/btnMap"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:strokeColor="#808080"
-            app:strokeWidth="2dp" />
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="0dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="1dp"
-            app:cardCornerRadius="30dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintBottom_toTopOf="@id/btnMap"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnCheckUp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            tools:ignore="MissingConstraints">
-
-            <LinearLayout
-                android:id="@+id/linearLayout3"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="190dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnCheckUp">
-
-                <TextView
-                    android:id="@+id/tv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center"
-                    android:text="오늘의 문진표 작성 현황"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="1차 문진표"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <CheckBox
-                    android:id="@+id/checkBox2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="2차 문진표"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="3차 문진표"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
+            app:strokeColor="#808080"
+            app:strokeWidth="1dp" />
 
         <Button
             android:id="@+id/btnMap"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="200dp"
             android:layout_weight="1"
-            android:backgroundTint="#EF9D22"
+            android:backgroundTint="#EE7104"
             android:text="지도에서 주변 복지시설 정보 보기"
-            android:textColor="#414141"
-            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="30dp"
-            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/btnRequest"
             app:strokeColor="#808080"
-            app:strokeWidth="2dp" />
+            app:strokeWidth="1dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
