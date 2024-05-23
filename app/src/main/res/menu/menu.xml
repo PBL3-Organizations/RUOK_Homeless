@@ -4,11 +4,23 @@
     tools:showIn = "nv_view">
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/tabLogout"
+            android:title="로그아웃"
+            />
+        <item
+            android:id="@+id/tabInfoRevision"
+            android:title="회원정보 수정"
+            />
+        <item
             android:id="@+id/tabDashboard"
             android:title="홈" />
         <item
-            android:id="@+id/tablist"
-            android:title="문진표 목록"
+            android:id="@+id/tabList"
+            android:title="요청사항 목록"
+            />
+        <item
+            android:id="@+id/tabAccess"
+            android:title="접근 중인 복지사 보기"
             />
     </group>
 
