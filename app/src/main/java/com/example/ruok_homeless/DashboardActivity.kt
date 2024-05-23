@@ -29,8 +29,10 @@ class DashboardActivity : AppCompatActivity() {
         //네비게이션 드로어 선택 시 해당 Fragment로 전환
         binding.navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.tabLogout -> setFragment(LogoutFragment())
+                R.id.tabInfoRevision -> setFragment(InfoRevisionFragmant())
                 R.id.tabDashboard -> setFragment(DashboardFragment())
-                R.id.tablist -> setFragment(ListFragment())
+                R.id.tabList -> setFragment(ListFragment())
             }
             binding.drawerLayout.closeDrawers()
             false
