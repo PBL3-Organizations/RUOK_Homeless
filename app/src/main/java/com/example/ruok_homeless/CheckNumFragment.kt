@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,6 +29,23 @@ class CheckNumFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val pwModifyConfirmButton = view.findViewById<Button>(R.id.pwModifyConfirm)
+        pwModifyConfirmButton.setOnClickListener {
+            // InfoRevisionFragment의 인스턴스 생성
+            val infoRevisionFragment = InfoRevisionFragment.newInstance("param1", "param2")
+
+            // 현재 프래그먼트를 InfoRevisionFragment로 교체
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.rootLayout, infoRevisionFragment)
+                .addToBackStack(null) // 이전 프래그먼트로 돌아갈 수 있게 합니다
+                .commit()
+        }
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

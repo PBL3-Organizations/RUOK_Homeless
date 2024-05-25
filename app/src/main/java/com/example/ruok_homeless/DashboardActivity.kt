@@ -30,7 +30,7 @@ class DashboardActivity : AppCompatActivity() {
         binding.navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.tabLogout -> setFragment(LogoutFragment())
-                R.id.tabInfoRevision -> setFragment(InfoRevisionFragment())
+                R.id.tabInfoRevision -> setFragment(CheckNumFragment())
                 R.id.tabDashboard -> setFragment(DashboardFragment())
                 R.id.tabList -> setFragment(RequestFragment())
                 R.id.tabAccess -> setFragment(AccessFragment())
