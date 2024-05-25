@@ -32,7 +32,7 @@ class DashboardActivity : AppCompatActivity() {
                 R.id.tabLogout -> setFragment(LogoutFragment())
                 R.id.tabInfoRevision -> setFragment(InfoRevisionFragment())
                 R.id.tabDashboard -> setFragment(DashboardFragment())
-                R.id.tabList -> setFragment(ListFragment())
+                R.id.tabList -> setFragment(RequestFragment())
                 R.id.tabAccess -> setFragment(AccessFragment())
             }
             binding.drawerLayout.closeDrawers()
