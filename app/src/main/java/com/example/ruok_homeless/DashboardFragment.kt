@@ -18,19 +18,19 @@ class DashboardFragment : Fragment() {
     ): View? {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
-        val btnMap = view?.findViewById<Button>(R.id.btnMap)
         val btnRequest = view?.findViewById<Button>(R.id.btnRequest)
+        val btnMap = view?.findViewById<Button>(R.id.btnMap)
 
-        //btnRequest 클릭시 DashboardFragment에서 RequestFragment로 이동
+        //btnRequest 클릭시 DashboardFragment에서 ListFragment로 이동
         binding.btnRequest.setOnClickListener{
             val parentActivity = activity as DashboardActivity
-            parentActivity.setFragment(RequestFragment())
+            parentActivity.setFragment(ListFragment())
         }
 
-        //btnMap 클릭시 DashboardFragment에서 WalfareFacilitiesFragment로 이동
+        //btnMap 클릭시 DashboardFragment에서 AccessFragment로 이동
         binding.btnMap.setOnClickListener{
             val parentActivity = activity as DashboardActivity
-            parentActivity.setFragment(WelfareFacilitiesFragment())
+            parentActivity.setFragment(AccessFragment())
         }
 
         return binding!!.root
